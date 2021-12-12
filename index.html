@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wrist DJ</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<center>
+  	<h3 id="h3">Wrist DJ
+	    <br>
+	    <span id="note">NOTE - Move your left wrist up and down for increasing and decreasing the volume. 
+        Move your right wrist up and down for increasing and decreasing the speed</span>
+  	</h3>
+	<br><br>
+
+  <button id="PlayButton" onclick="PlaySound()" class="button">Play</button>
+  <br><br>
+  <button id="StopButton" class="button" onclick="StopSound()">Stop</button>
+  <br><br>
+  <div id="Speed_Div" class="Div">
+    <img src="disk.gif">
+    <br><br><br>
+    <h3 id="SpeedLabel" class="label">Speed</h3>
+  </div>
+  <br>
+  <div id="Volume_Div" class="Div">
+    <img src="disk.gif">
+    <br><br><br>
+    <h3 id="VolumeLabel"class="label">Volume</h3>
+  </div>
+</center>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
